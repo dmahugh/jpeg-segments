@@ -1,0 +1,211 @@
+--------------------------------
+testimages/AdobeXMP-ext.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP1  - METADATA
+|-- APP1  - METADATA
+|-- APP1  - METADATA
+|-- APP1  - METADATA
+|-- APP1  - METADATA
+|-- APP1  - METADATA
+|-- APP1  - METADATA
+|-- APP1  - METADATA
+|-- APP1  - METADATA
+|-- APP1  - METADATA
+|-- APP0  - METADATA
+|-- DQT   - image data
+|-- DQT   - image data
+|-- SOF0  - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- SOS   - image data
+--------------------------------
+testimages/CanonFlickr.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP0  - METADATA
+|-- APP1  - METADATA
+|-- APP13 - METADATA
+|-- APP1  - METADATA
+|-- DQT   - image data
+|-- DQT   - image data
+|-- SOF0  - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- SOS   - image data
+--------------------------------
+testimages/Facebook.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP0  - METADATA
+|-- APP13 - METADATA
+|-- APP2  - METADATA
+|-- DQT   - image data
+|-- DQT   - image data
+|-- SOF2  - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- SOS   - image data
+--------------------------------
+testimages/firstsegment-APP0.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP0  - METADATA
+|-- APP1  - METADATA
+|-- APP13 - METADATA
+|-- APP1  - METADATA
+|-- APP2  - METADATA
+|-- APP14 - METADATA
+|-- DQT   - image data
+|-- SOF0  - image data
+|-- DRI   - image data
+|-- DHT   - image data
+|-- SOS   - image data
+--------------------------------
+testimages/firstsegment-APP1.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP1  - METADATA
+|-- DQT   - image data
+|-- SOF0  - image data
+|-- DHT   - image data
+|-- SOS   - image data
+--------------------------------
+testimages/iPhone5.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP0  - METADATA
+|-- APP1  - METADATA
+|-- APP2  - METADATA
+|-- DQT   - image data
+|-- DQT   - image data
+|-- SOF0  - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- SOS   - image data
+--------------------------------
+testimages/LeicaFlickr.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP0  - METADATA
+|-- APP2  - METADATA
+|-- COM   - image data
+|-- DQT   - image data
+|-- DQT   - image data
+|-- SOF0  - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DRI   - image data
+|-- SOS   - image data
+--------------------------------
+testimages/MSPaint.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP0  - METADATA
+|-- DQT   - image data
+|-- DQT   - image data
+|-- SOF0  - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- SOS   - image data
+--------------------------------
+testimages/multiple-APP13-01.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP0  - METADATA
+|-- APP13 - METADATA
+|-- APP2  - METADATA
+|-- APP13 - METADATA
+|-- DQT   - image data
+|-- DQT   - image data
+|-- SOF0  - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- SOS   - image data
+--------------------------------
+testimages/multiple-APP13-02.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP1  - METADATA
+|-- APP13 - METADATA
+|-- APP13 - METADATA
+|-- APP13 - METADATA
+|-- APP13 - METADATA
+|-- APP1  - METADATA
+|-- APP2  - METADATA
+|-- APP14 - METADATA
+|-- DQT   - image data
+|-- SOF0  - image data
+|-- DRI   - image data
+|-- DHT   - image data
+|-- SOS   - image data
+--------------------------------
+testimages/Nexus6P-phone.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP0  - METADATA
+|-- APP2  - METADATA
+|-- DQT   - image data
+|-- DQT   - image data
+|-- SOF2  - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- SOS   - image data
+--------------------------------
+testimages/NikonD800.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP1  - METADATA
+|-- APP13 - METADATA
+|-- APP1  - METADATA
+|-- APP2  - METADATA
+|-- APP14 - METADATA
+|-- DQT   - image data
+|-- SOF0  - image data
+|-- DRI   - image data
+|-- DHT   - image data
+|-- SOS   - image data
+--------------------------------
+testimages/Photoshop.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP1  - METADATA
+|-- APP13 - METADATA
+|-- APP1  - METADATA
+|-- APP2  - METADATA
+|-- APP14 - METADATA
+|-- DQT   - image data
+|-- SOF0  - image data
+|-- DRI   - image data
+|-- DHT   - image data
+|-- SOS   - image data
+--------------------------------
+testimages/WindowsPhone.jpg
+--------------------------------
+|-- SOI   - segment marker only
+|-- APP0  - METADATA
+|-- APP1  - METADATA
+|-- APP1  - METADATA
+|-- APP15 - METADATA
+|-- APP15 - METADATA
+|-- DQT   - image data
+|-- DQT   - image data
+|-- SOF0  - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- DHT   - image data
+|-- SOS   - image data
