@@ -10,11 +10,14 @@ architecture of those JPG files.
 - tagnames_exif23.json = tag names from the Exif 2.3 specification
 - output.txt = sample output of jpegsegments.py
 
-Here is the algorithm implemented by jpegsegments.py to identify the segments in
-a JPEG file:
+Here is the algorithm implemented by jpegsegments.py to identify the segments
+in a JPEG file:
 
 ![flowchart](flowchart.png)
 
-Sample output from jpegsegments.py for a folder of test images:
+I've assembled a folder of test files that contain variations on the order and
+type of segments in a JPEG image. Some of these are Copyright &copy; other
+people so I can't include the images in the repo, but here's an example of the
+output from jpegsegments.py for some of my test images:
 
 ![screenshot](output.png)
