@@ -88,7 +88,7 @@ def segment_read(filehandle=None):
     datasize_bytes = filehandle.read(2)
     datasize = struct.unpack('>H', datasize_bytes)[0]
 
-    # if segment contains metadata, save a copy in the dictionary
+    # if segment contains metadata, save a copy in the segment's dictionary
     if segdict['has_meta']:
         segdict['payload'] = filehandle.read(datasize - 2)
     else:
