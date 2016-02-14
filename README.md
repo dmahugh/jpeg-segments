@@ -15,7 +15,7 @@ in a JPEG file:
 
 ![flowchart](flowchart.png)
 
-I've assembled a folder of test files that contain variations on the order and
+For testing and research I'm using a folder of test files that contain variations on the order and
 type of segments in a JPEG image. Some of these are Copyright &copy; other
 people so I can't include the images in the repo, but here's an example of the
 output from jpegsegments.py for some of my test images:
