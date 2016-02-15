@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module jpegsegments</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>jpegsegments</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdmahugh%5Cdropbox%5Cpython%5Cexiferino%5Cjpegsegments.py">c:\users\dmahugh\dropbox\python\exiferino\jpegsegments.py</a></font></td></tr></table>
+    <p><tt>Tools&nbsp;for&nbsp;extracting&nbsp;metadata&nbsp;from&nbsp;Jpeg&nbsp;files.<br>
+&nbsp;<br>
+seg2dict()&nbsp;-&nbsp;convert&nbsp;a&nbsp;Jpeg&nbsp;segment&nbsp;to&nbsp;a&nbsp;dictionary<br>
+<a href="#-segment_list">segment_list</a>()&nbsp;-&nbsp;create&nbsp;list&nbsp;of&nbsp;segment&nbsp;dictionaries&nbsp;from&nbsp;Jpeg&nbsp;file</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="struct.html">struct</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-segment_list"><strong>segment_list</strong></a>(filename=None)</dt><dd><tt>Create&nbsp;list&nbsp;of&nbsp;segment&nbsp;dictionaries&nbsp;from&nbsp;a&nbsp;Jpeg&nbsp;file.<br>
+&nbsp;<br>
+filename&nbsp;=&nbsp;a&nbsp;Jpeg&nbsp;file<br>
+returns&nbsp;a&nbsp;list&nbsp;of&nbsp;dictionaries,&nbsp;one&nbsp;per&nbsp;segment&nbsp;in&nbsp;the&nbsp;file.<br>
+&nbsp;<br>
+Note:&nbsp;since&nbsp;we're&nbsp;only&nbsp;interested&nbsp;in&nbsp;metadata,&nbsp;image&nbsp;data&nbsp;is&nbsp;ignored.</tt></dd></dl>
+ <dl><dt><a name="-segment_read"><strong>segment_read</strong></a>(filehandle=None)</dt><dd><tt>Convert&nbsp;a&nbsp;Jpeg&nbsp;segment&nbsp;to&nbsp;a&nbsp;dictionary.<br>
+&nbsp;<br>
+filehandle&nbsp;=&nbsp;Jpeg&nbsp;file&nbsp;open&nbsp;for&nbsp;binary&nbsp;read,&nbsp;positioned&nbsp;to&nbsp;first&nbsp;byte<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;the&nbsp;segment<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;dictionary&nbsp;with&nbsp;these&nbsp;keys:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;offset&nbsp;=&nbsp;offset&nbsp;of&nbsp;the&nbsp;segment&nbsp;within&nbsp;the&nbsp;Jpeg&nbsp;file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;segmark&nbsp;=&nbsp;the&nbsp;2-byte&nbsp;segment&nbsp;marker<br>
+&nbsp;&nbsp;&nbsp;&nbsp;segtype&nbsp;=&nbsp;name&nbsp;of&nbsp;this&nbsp;segment&nbsp;type&nbsp;(e.g.,&nbsp;'APP1')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;has_data&nbsp;=&nbsp;whether&nbsp;segment&nbsp;type&nbsp;has&nbsp;a&nbsp;data&nbsp;payload<br>
+&nbsp;&nbsp;&nbsp;&nbsp;has_meta&nbsp;=&nbsp;whether&nbsp;segment&nbsp;type's&nbsp;payload&nbsp;contains&nbsp;metadata<br>
+&nbsp;&nbsp;&nbsp;&nbsp;payload&nbsp;=&nbsp;segment's&nbsp;data&nbsp;payload</tt></dd></dl>
+</td></tr></table>
+</body></html>
