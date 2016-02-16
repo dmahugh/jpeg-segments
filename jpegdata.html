@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module jpegdata</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>jpegdata</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdmahugh%5Cdropbox%5Cpython%5Cexiferino%5Cjpegdata.py">c:\users\dmahugh\dropbox\python\exiferino\jpegdata.py</a></font></td></tr></table>
+    <p><tt>Data&nbsp;structures&nbsp;for&nbsp;Jpeg&nbsp;metadata&nbsp;extraction.<br>
+&nbsp;<br>
+<a href="#-exiftag">exiftag</a>()&nbsp;converts&nbsp;exif&nbsp;tag&nbsp;number&nbsp;(int)&nbsp;to&nbsp;tag&nbsp;description<br>
+<a href="#-seginfo">seginfo</a>()&nbsp;converts&nbsp;segment&nbsp;marker&nbsp;to&nbsp;dictionary&nbsp;of&nbsp;segment&nbsp;info<br>
+<a href="#-testimages">testimages</a>()&nbsp;returns&nbsp;a&nbsp;list&nbsp;of&nbsp;Jpeg&nbsp;images&nbsp;for&nbsp;testing</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-exiftag"><strong>exiftag</strong></a>(tagno)</dt><dd><tt>Convert&nbsp;Exif&nbsp;tag&nbsp;number&nbsp;(string)&nbsp;to&nbsp;description&nbsp;(string)<br>
+&nbsp;<br>
+These&nbsp;tag&nbsp;numbers/names&nbsp;are&nbsp;defined&nbsp;in&nbsp;the&nbsp;Exif&nbsp;2.3&nbsp;specification.</tt></dd></dl>
+ <dl><dt><a name="-seginfo"><strong>seginfo</strong></a>(segment_marker)</dt><dd><tt>Convert&nbsp;segment&nbsp;marker&nbsp;to&nbsp;dictionary&nbsp;of&nbsp;segment&nbsp;info.<br>
+&nbsp;<br>
+For&nbsp;example,&nbsp;b'ÿá'&nbsp;is&nbsp;converted&nbsp;to&nbsp;a&nbsp;dictionary&nbsp;with&nbsp;these<br>
+key/value&nbsp;pairs:&nbsp;name:&nbsp;'APP1',&nbsp;has_data:&nbsp;True,&nbsp;has_meta:&nbsp;True<br>
+&nbsp;<br>
+has_data&nbsp;=&nbsp;whether&nbsp;this&nbsp;segment&nbsp;type&nbsp;has&nbsp;a&nbsp;data&nbsp;size&nbsp;in&nbsp;bytes&nbsp;3-4&nbsp;and<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;data&nbsp;payload&nbsp;starting&nbsp;at&nbsp;byte&nbsp;5;&nbsp;if&nbsp;False,&nbsp;then&nbsp;this<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;segment&nbsp;type&nbsp;is&nbsp;justa&nbsp;2-byte&nbsp;segment&nbsp;marker&nbsp;(e.g.,&nbsp;SOI/EOI)<br>
+&nbsp;<br>
+has_meta&nbsp;=&nbsp;whether&nbsp;this&nbsp;segment&nbsp;type&nbsp;contains&nbsp;metadata&nbsp;to&nbsp;be<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retrieved&nbsp;(i.e.,&nbsp;Exif/JFIF/XMP/other&nbsp;metadata).<br>
+&nbsp;<br>
+Most&nbsp;of&nbsp;these&nbsp;segment&nbsp;types&nbsp;are&nbsp;defined&nbsp;in&nbsp;Exif&nbsp;2.3,&nbsp;and&nbsp;some<br>
+additional&nbsp;information&nbsp;on&nbsp;other&nbsp;segment&nbsp;types&nbsp;can&nbsp;be&nbsp;found&nbsp;here:<br>
+<a href="http://www.ozhiker.com/electronics/pjmt/jpeg_info/app_segments.html">http://www.ozhiker.com/electronics/pjmt/jpeg_info/app_segments.html</a></tt></dd></dl>
+ <dl><dt><a name="-testimages"><strong>testimages</strong></a>(filtercond=None)</dt><dd><tt>Get&nbsp;a&nbsp;list&nbsp;of&nbsp;Jpeg&nbsp;image&nbsp;filenames&nbsp;for&nbsp;testing.<br>
+&nbsp;<br>
+filtercond&nbsp;=&nbsp;optional&nbsp;string&nbsp;that&nbsp;occurs&nbsp;in&nbsp;filename&nbsp;(e.g.,&nbsp;'XMP')<br>
+&nbsp;<br>
+Notes:<br>
+-&nbsp;returns&nbsp;filenames&nbsp;from&nbsp;a&nbsp;'testimages'&nbsp;subfolder<br>
+-&nbsp;returned&nbsp;filenames&nbsp;include&nbsp;folder&nbsp;(e.g.,&nbsp;'testimages/whatever.jpg')<br>
+-&nbsp;filtering&nbsp;is&nbsp;case-insensitive</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>EXIF_TAGS</strong> = {'256': 'ImageWidth', '257': 'ImageLength', '258': 'BitsPerSample', '259': 'Compression', '262': 'PhotometricInterpretation', '266': 'FillOrder', '269': 'DocumentName', '270': 'ImageDescription', '271': 'Make', '272': 'Model', ...}<br>
+<strong>tagsfile</strong> = &lt;_io.TextIOWrapper name='tagnames_exif23.json' mode='r' encoding='cp1252'&gt;</td></tr></table>
+</body></html>
