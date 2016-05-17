@@ -69,11 +69,13 @@ def segment_read(filehandle=None):
     # Furthermore, the compressed data must actually be scanned and decoded
     # to find the EOI marker that follows, and we want to avoid the need to
     # read all of that data.
+
     # Note: if we terminate at SOS then we should never actually see an EOI,
     # but we're checking for EOI as well here to allow for the case where a
     # Jpeg file has no image data and only metadata -- we've not seen this
     # in an actual Jpeg, but it's theoretically possible and by checking for
     # both SOS and EOI here we will gracefully handle any such file.
+
     if segdict['segtype'] in ['SOS', 'EOI']:
         return segdict
 
